@@ -57,10 +57,8 @@ It features smooth joystick controls, a fixed camera resolution, reactive **HUD*
     flutter run -d chrome
     
     # Android (device or emulator)
-    flutter run -d android
-    
-    # iOS (simulator)
-    flutter run -d ios
+    flutter build apk --release
+        # it will provide a link, dowload it and play
 
 ## 🔧 Configuration
 Tune gameplay in lib/config.dart (spawn rate, base speeds, margins).
