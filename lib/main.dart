@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
       home: LayoutBuilder(
         builder: (context, constraints) {
-          const gameAspectRatio = 450.0 / 800.0;
+          const gameAspectRatio = 9 / 16;
           final screenAspectRatio = constraints.maxWidth / constraints.maxHeight;
 
           double gameWidth, gameHeight;
@@ -47,7 +47,6 @@ class MyApp extends StatelessWidget {
                   child: GameWidget(
                     game: game,
                     overlayBuilderMap: {
-                      // Use the SAME 'game' instance here
                       HUD.id:        (context, _) => HUD(game: game),
                       PauseMenu.id:  (context, _) => PauseMenu(game: game),
                       MainMenu.id:   (context, _) => MainMenu(game: game),
