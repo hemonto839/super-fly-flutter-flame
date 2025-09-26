@@ -59,6 +59,8 @@ It features smooth joystick controls, a fixed camera resolution, reactive **HUD*
     # Android (device or emulator)
     flutter build apk --release
         # it will provide a link, dowload it and play
+    # GameAPK Folder
+        # Enter the gameapk folder, check a file name Super Fly install it and enjoy the game
 
 ## 🔧 Configuration
 Tune gameplay in lib/config.dart (spawn rate, base speeds, margins).
